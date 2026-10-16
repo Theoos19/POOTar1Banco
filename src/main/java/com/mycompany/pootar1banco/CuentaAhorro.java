@@ -32,7 +32,7 @@ public class CuentaAhorro extends CuentaBancaria {
             return;
         }
 
-        // Si ya se hicieron 3 o más retiros, se aplica la comisión por exceso
+        // Si se hicieron 3 o más retiros se aplica la comisión por exceso
         if (retirosRealizadosMes >= 3) {
             double montoTotal = monto + comisionPorExceso;
             System.out.println("Aviso: Ha superado el limite de 3 retiros gratuitos este mes.");
